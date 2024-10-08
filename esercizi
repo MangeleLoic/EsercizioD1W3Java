@@ -1,0 +1,20 @@
+Es.1
+SELECT * FROM clienti WHERE nome = 'Mario'
+
+Es.2
+SELECT nome, cognome FROM clienti WHERE anno_di_nascita = 1982
+
+Es.3
+SELECT COUNT(*) FROM fatture WHERE iva=20
+
+Es.4
+SELECT EXTRACT(YEAR FROM data_fattura) FROM prodotti WHERE (data_fattura = 2017) AND (in_produzione = true OR in_commercio = false)
+
+Es.5
+
+
+Es.6
+
+
+Es.7
+SELECT COUNT(*), EXTRACT(YEAR FROM data_fattura) AS anno FROM fatture WHERE iva=20 GROUP BY anno
